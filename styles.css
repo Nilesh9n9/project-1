@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+form{
+    display: block;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5;
+  }
+
+.modal-window h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+  
+.modal-window input, .modal-window2 input{
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid grey;
+    width: 95%;
+    height: 40px;
+    padding-left: 20px;
+  }
+  
+  .modal-window2 label{
+    position: relative;
+    left: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .modal-window label{
+    position: relative;
+    left: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .modal-window .btn-sbmt, .modal-window2 .btn-sbmt{
+    border: 1px solid black;
+    position: relative;
+    border-radius: 30px;
+  }
+  
+  .modal-window .btn-sbmt{
+    margin-top: 40px;
+  }
+  
+  .modal-window2 .btn-sbmt{
+    margin-top: 20px;
+  }
+  
+  .loginbtn-loader{
+    display: none;
+    width: 100px;
+    position: absolute;
+    top: 52%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn-sbmt:focus .loginbtn-loader{
+    display: block;
+  }
+
+  .btn-sbmt{
+    border-radius: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    outline: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    transition-duration: 0.25s;
+    font-weight: 400;
+    border-radius: 30px;
+  }
+
+  .btn-sbmt:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+  }

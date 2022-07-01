@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        window.onload = function() {
+        
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "HEALTH EVALUATION OF WOMEN IN TRIMESTERS"
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"\"",
+                    indexLabel: "{label} {y}",
+                    dataPoints: [
+                        {y: 20.6, label: "FIRST TRIMESTER"},
+                        {y: 23.7, label: "SECOND TRIMESTER"},
+                        {y: 24, label:"THIRD TRIMESTER"},
+                        
+                        
+                        
+                        
+                    ]
+                }]
+            });
+            chart.render();
+        
+        }
+        </script>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> eatright. </a>
+    
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <!-- <a href="#services">services</a> -->
+            <a href="about-us.html">About</a>
+            <a href="Content.html">Content</a>
+            <!-- <a href="#book">book</a> -->
+            <a href="form1.html">Form</a>
+            <a href="Login.tml">Login</a>
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+
+
+    <section class="doctors" id="doctors">
+
+        <h1 class="heading" style="padding:50px;">Our <span>Content</span> </h1>
+        <div class="contentText">
+            <strong>" When the pregnancy test comes back positive, 
+                you've begun a life-altering journey. 
+                As the baby grows and changes through each stage of pregnancy,
+                 you go through changes, too: in your body, emotions, and lifestyle. 
+                 You need information to answer your questions and help you make good decisions 
+                 for a healthy baby and a healthy you. "</strong>
+        </div>
+
+        <div id="chartContainer" style="height: 450px; width: 100%; margin-top: 30px;"></div>
+
+        <div class="box-container">
+
+            <div class="tablink">1st Trimester</div>
+            <div class="tablink">2nd Trimester</div>
+            <div class="tablink">3rd Trimester</div>
+    
+            <div class="box">
+                <div class="share">
+                    <iframe width="240" height="315" src="https://www.youtube.com/embed/8SXXSfnx7Nc" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope;
+                     picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="share">
+                    <iframe width="240" height="315" src="https://www.youtube.com/embed/kuMInwXpOUg"
+                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                      clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="share">
+                    <iframe width="240" height="315" src="https://www.youtube.com/embed/uZM6gUvcbl4"
+                     title="YouTube video player" frameborder="0" allow="accelerometer;
+                      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="share">
+                    <iframe width="240" height="315" src="https://www.youtube.com/embed/Q5P8ajRhbgY" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="share">
+                    <iframe width="240"height="315" src="https://www.youtube.com/embed/gNu1Cgq964g" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                     clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+
+                </div>
+            </div>
+    
+            <div class="box">
+
+                <div class="share">
+                    <iframe width="240" height="315" src="https://www.youtube.com/embed/pm_KgpdAK-Y"
+                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                      clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe>
+                </div>
+            </div>
+    
+        </div>
+     
+    </section>
+</body>
+</html>

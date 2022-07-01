@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <button class=" underlineHover" onclick = "replace1()"> worker </button>
+    <button class=" underlineHover" onclick = "replace2()"> admin </button>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+    </div>
+    
+    <!-- Login Form -->
+    <form id="div1">
+
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+    <form id="div2" style="display: none;">
+      <input type="tel" id="login" class="fadeIn second" name="Phone number" placeholder="Phone number">
+      <input type="text" id="password" class="fadeIn third" name="otp" placeholder="OTP">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+
+<script type = "text/javascript">
+  function replace1() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="block";
+  }
+  function replace2() {
+  document.getElementById("div1").style.display="block";
+  document.getElementById("div2").style.display="none";
+  }
+  
+  </script>
+  
+</html>

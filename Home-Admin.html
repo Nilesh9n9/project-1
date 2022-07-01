@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>ADMIN DASHBOARD</title>
+    <h1 style="margin-top: 130px;">Admin Dashboard</h1>
+    <script>
+        window.onload = function() {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+                text: "HEALTH EVALUATION OF WOMEN IN TRIMESTERS"
+            },
+            data: [{
+                type: "pie",
+                startAngle: 240,
+                yValueFormatString: "##0.00\"\"",
+                indexLabel: "{label} {y}",
+                dataPoints: [
+                    {y: 20.6, label: "FIRST TRIMESTER"},
+                    {y: 23.7, label: "SECOND TRIMESTER"},
+                    {y: 24, label:"THIRD TRIMESTER"},
+                    
+                    
+                    
+                    
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <header class="header">
+
+        <a href="Home.html" class="logo"> <i class="fas fa-heartbeat"></i> eatright. </a>
+    
+        <nav class="navbar">
+            <a href="Home-Admin.html">Home</a>
+            <!-- <a href="#services">services</a> -->
+            <a href="tracker.html">Tracker</a>
+            <!-- <a href="#book">book</a> -->
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+    <!-- <section class="home" id="home">
+
+        <div class="image">
+            <img src="image/home-img.svg" alt="">
+        </div>
+    
+        <div class="content">
+            <h3>stay safe, stay healthy</h3>
+            <p>“A baby is something you carry inside you for nine months, in your arms for three years, and in your heart until the day you die.”</p>
+            <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
+            
+        </div>
+    
+    </section> -->
+    <div id="chartContainer" style="height: 450px; width: 100%; margin-top: 30px;"></div>
+<div style="font-size:2rem; border:1px solid black;">
+            
+              
+  </div>
+  <center>
+    <div style="border-radius:6%"><canvas id="myChart"
+            style="width:100%;max-width:500px ; margin-top:40px; "></canvas>
+        <h2>BMI Indexes of Women</h2>
+    </div>
+
+</center>
+<script>
+    // var height = [1.89, 1.65, 1.78, 1.90, 2.4, 1.45, 1.87, 2.45, 1.45];
+    // var weight = [69, 56, 54, 78, 45, 66, 78, 89, 105];
+
+    var xyValues = [
+        { x: 69, y: 1.89 },
+        { x: 56, y: 1.65 },
+        { x: 54, y: 1.78 },
+        { x: 45, y: 1.90 },
+        { x: 66, y: 2.4 },
+        { x: 66, y: 1.03 },
+        { x: 78, y: 1.90 },
+        { x: 45, y: 1.78 },
+        { x: 66, y: 2.35 },
+        { x: 78, y: 2.5 },
+        { x: 105, y: 1.45 }
+    ];
+
+    new Chart("myChart", {
+        type: "scatter",
+        data: {
+            datasets: [{
+                pointRadius: 4,
+                pointBackgroundColor: "rgb(68, 239, 136)",
+                data: xyValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                xAxes: [{ ticks: { min: 40, max: 160 } }],
+                yAxes: [{ ticks: { min: 1, max: 2 } }],
+            }
+        }
+    });
+</script>
+
+<script src="script.js"> </script>
+<script src="user.js"> </script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

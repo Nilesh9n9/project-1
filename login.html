@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> eatright. </a>
+    
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <!-- <a href="#services">services</a> -->
+            <a href="about-us.html">About</a>
+            <a href="Content.html">Content</a>
+            <!-- <a href="#book">book</a> -->
+            <a href="form1.html">Form</a>
+            <a href="Login.html">Login</a>
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+    <section class="home" id="home">
+
+        <div class="form-container" >
+          <form action="submit" id="myForm" class="form-container">
+            <h1>LogIn Form</h1>
+        
+            <label for="text"><b>Enter Phone Number:</b></label>
+            <input type="text" placeholder="Enter Phone Number" name="PhoneNum" id="phn" required>
+            <br>
+            <label for="text"><b>Enter Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="Password" id="psw" required>
+            <br>
+            <!-- <label for="img"><b>Image:</b></label>
+            <input type="file" placeholder="Upload" name="upload" required> -->
+            <button type = "submit" class="btn" id="clickMe" >Login</button>
+            <!-- <button type="button" class="btn cancel">Close</button> -->
+          </form>
+          <div id="formFooter">
+      <a class="underlineHover" href="signup.html">Dont have an Account? Sign Up</a>
+    </div>
+        </div>
+    
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
